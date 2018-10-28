@@ -795,4 +795,4 @@ println(listofDuplicates("La", 8))
 val bussinessName = "MOntreux Jazz Cafe"
 
 def  sequareOf(x: Int) = x*x
-def fac(n: Int) = if (n == 0) 1 else n * fac(n - 1)
+//def fac(n: Int) = if (n == 0) 1 else n * fac(n - 1)
