@@ -792,7 +792,7 @@ def listofDuplicates[A](x: A, length: Int): List[A] = {
 println(listofDuplicates[Int](3, 4))
 println(listofDuplicates("La", 8))
 */
-
+/*
 // Operator
 
 case  class Vec(val x: Double, val y: Double) {
@@ -803,5 +803,16 @@ val vector1 = Vec(1.0, 2.0)
 val vector2 = Vec(2.0, 2.0)
 
 val vector3 = vector1 + vector2
-vector3.x
-vector3.y
+println(vector3)
+*/
+
+// By-name parametrs: =>
+//def calculate(input: => Int) = input * 37
+
+//Annotations
+object DeprecationDemo extends App {
+  @deprecated("deprecation meaaage", "release # which deprecates methods")
+  def hello = "Hola"
+
+  hello
+}
