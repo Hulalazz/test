@@ -793,24 +793,15 @@ println(listofDuplicates[Int](3, 4))
 println(listofDuplicates("La", 8))
 */
 
-case class Vec(val x: Double, val y: Double) {
+// Operator
+
+case  class Vec(val x: Double, val y: Double) {
   def +(that: Vec) = new Vec(this.x + that.x, this.y + that.y)
 }
 
-val vector1 = Vec(1.0, 1.0)
+val vector1 = Vec(1.0, 2.0)
 val vector2 = Vec(2.0, 2.0)
 
 val vector3 = vector1 + vector2
-vector3.x  // 3.0
-vector3.y  // 3.0
-
-val bussinessName = "Montreux Jazz Cafe"
-
-case class MyBool(x: Boolean) {
-  def and(that: MyBool): MyBool = if (x) that else this
-  def or(that: MyBool): MyBool = if (x) this else that
-  def negate: MyBool = MyBool(!x)
-}
-
-def  sequareOf(x: Int) = x*x
-def fac(n: Int) = if (n == 0) 1 else n * fac(n - 1)
+vector3.x
+vector3.y
